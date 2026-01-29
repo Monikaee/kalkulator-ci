@@ -3,5 +3,6 @@ class Calculator:
         return a + b
 
     def divide(self, a, b):
-        if(b==0) return 0
-        return a
+        if(b==0):
+            raise ValueError("Nie można dzielić przez zero")
+        return a/b
